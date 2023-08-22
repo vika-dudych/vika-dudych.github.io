@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="  first-block">
+        <div class=" block top-block">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="center-block">
+            <input type="button" value="edit" class="btn-edit">
+            <input type="button" value="style" class="btn-style">
+        </div>
+        <div class="block bottom-block">
+            <div class="edit-block hide ">
+                <textarea class="edit-area"></textarea>
+                <input type="button" value="add" class="btn-add">
+                <input type="button" value="save" class="btn-save">
+            </div>
+
+            <div class="style-block hide">
+                <form>
+                    <div class="form-size">
+                        <p class="title">Font size</p>
+                        <input type="radio" name="size" value="12px"><span>12px</span>
+                        <input type="radio" name="size" value="14px" checked><span>14px</span>
+                        <input type="radio" name="size" value="16px"><span>16px</span>
+                        <input type="radio" name="size" value="18px"><span>18px</span>
+                        <input type="radio" name="size" value="20px"><span>20px</span>
+                    </div>
+                    <p class="title">Font family</p>
+                    <div class="dropdown">
+                        <input class="text-box" type="text" placeholder="Choose option" readonly>
+                        <div class="options">
+                            <div class="select">cursive</div>
+                            <div class="select">fantasy</div>
+                            <div class="select">monospace</div>
+                            <div class="select">sans-serif</div>
+                        </div>
+                    </div>
+                    <div class="form-color">
+                        <p class="title">Color</p>
+                        <input type="button" value="Color of text" class="btn-text-color">
+                        <input type="button" value="Background color" class="btn-bg-color">
+                        <div class="colors hide">
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                        </div>
+
+                        <div class="bg hide">
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                            <div class="color-box"></div>
+                        </div>
+                    </div>
+                    <div class="form-style">
+                        <p class="title">Style</p>
+                        <input type="checkbox" name="check" value="bold"><span>Bold text</span>
+                        <input type="checkbox" name="check" value="italic"><span>Cursive text</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-add block  ">
+        <form id="reset-table">
+            <p class="title">Choose what you want</p>
+            <input type="radio" id="table" name="type" value="table"><span>table</span>
+            <input type="radio" id="list" name="type" value="list"><span>list</span>
+            <div class="block-table hide">
+                <span class="title-table">Count TR:</span>
+                <input class="text-table" id="tr" type="text" placeholder="Count TR">
+                <span class="title-table">Count TD:</span>
+                <input class="text-table" id="td" type="text" placeholder="Count TD">
+                <p class="title">Add style to your table:</p>
+                <span class="text-table-w">Width of TD:</span>
+                <input class="text-table" id="w-td" type="text" placeholder="Width of TD">
+                <span class="text-table-h">Height of TD:</span>
+                <input class="text-table" id="h-td" type="text" placeholder="Height of TD">
+
+                <div class="border-color">
+                    <span>Width of border:</span>
+                    <input class="text-table-border" id="w-border" type="text" placeholder="Width">
+                    <span class="text-type-border">Type of border:</span>
+                    <div class="dropdown-table">
+                        <input class="text-box-table" id="type-border" type="text" placeholder="Choose option" readonly>
+                        <div class="options-table">
+                            <div class="select-table">solid</div>
+                            <div class="select-table">dashed</div>
+                            <div class="select-table">dotted</div>
+                        </div>
+                    </div>
+                    <span class="text-type-border">Type of color:</span>
+                    <div class="dropdown-table-color">
+                        <input class="text-box-table-color" id="color-border" type="text" placeholder="Choose option"
+                               readonly>
+                        <div class="options-table-color">
+                            <div class="select-table-color">black</div>
+                            <div class="select-table-color">red</div>
+                            <div class="select-table-color">blue</div>
+                            <div class="select-table-color">green</div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="Create table" class="btn-create-table">
+            </div>
+        </form>
+
+
+        <div class="block-list hide">
+            <form id="reset-list">
+                <span class="title-list">Count Li:</span>
+                <input class="text-list" id="li" type="text" placeholder="Count Li">
+                <div class="box-type-list">
+                    <span class="text-list-title">Type of marks:</span>
+                    <div class="dropdown-list">
+                        <input class="text-box-list" id="box-list" type="text" placeholder="Choose option" readonly>
+                        <div class="options-list">
+                            <div class="select-list">circle</div>
+                            <div class="select-list">disc</div>
+                            <div class="select-list">square</div>
+                        </div>
+                    </div>
+                </div>
+                <input type="button" value="Create list" class="btn-create-list">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
